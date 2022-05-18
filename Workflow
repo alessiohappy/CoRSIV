@@ -22,6 +22,14 @@ plink --vcf nomefile --keep fileindividui.txt --make-bed --out nome_output
 
 plink --vcf ALL.chr16.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf --keep Japan.txt --make-bed --out chr16_Japan
 
+RISULTATO:
+#devo avere, nella cartella del cromosoma (e.g., cartella "chr16"), il file principale (ALL.chr16.shapeit...), i file di Plink, Japan.txt PIU' 5 nuovi file:
+  - chr16_Japan.bed
+  - chr16_Japan (formato BIM)
+  - chr16_Japan.fam
+  - chr16_Japan (documento di testo)
+  - chr16_Japan (file NOSEX)
+
 #Nel file excel "Corsiv_position" (si trova nella cartella "Corsiv") creo un nuovo foglio dove metto le posizioni per quel cromosoma (N°chr-posizione1-posizione2-n°sequenza) e accanto le formule che successivamente dovranno essere copiate e incollate sulla barra di comando
 #Il file con le posizioni è Corsiv_position 
 #esempio (di cosa deve esserci PER OGNI RIGA PER OGNI POSIZIONE nel foglio del rispettivo cromosoma):
