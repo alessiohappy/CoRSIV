@@ -42,7 +42,7 @@ RISULTATO:
 #devo avere, oltre a tutti gli altri file, anche un numero di file pari a 6 * il numero delle sequenze. 6 corrisponde al numero di file con diversi formati (bed, bim, fam, freq, testo, NOSEX)
   #esempio: se ho 363 sequenze (quindi 363 posizioni da-a per un cromosoma), avrò in totale un output dal processo precedente di 363*6 nuovi file, cioè 2178 nuovi file!
 
-#Sposto il bim principale in una cartella a parte (chiamata "bim")
+#SPOSTO IL BIM PRINCIPALE (chrNUMERO_Japan [file BIM]) IN UNA CARTELLA A PARTE (chiamata "bim")
 
 #Unisco tutti i bim e tutti i freq
 copy /b *.bim nomeoutput.txt (e.g., chr16_ALLbim)
