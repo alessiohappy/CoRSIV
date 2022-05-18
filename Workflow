@@ -1,3 +1,4 @@
+OVERVIEW
 Cartella "Corsiv"
   - dentro troviamo All SNP_CoRSIV (cartella coi file "finali", risultanti dal processo descritto di seguito)
   - cartelle dei cromosomi (chr1, chr2, ecc)
@@ -9,10 +10,12 @@ Cartella "Corsiv"
   - i file di plink (LICENSE, plink, prettify, toy.map, toy.ped)
   - una cartella chiamata "bim", dove metteremo successivamente il "bim principale"
   
+PROMPT DEI COMANDI
+
 #Entro nella cartella
 cd Desktop\Corsiv\chrn°
 
-#EXTRACT INDIVIDUALS
+#Extract individuals
 plink --vcf nomefile --keep fileindividui.txt --make-bed --out nome_output
 #esempio:
 plink --vcf ALL.chr16.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf --keep Japan.txt --make-bed --out chr16_Japan
