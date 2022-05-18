@@ -1,0 +1,28 @@
+#Entro nella cartella
+cd Desktop\Corsiv\chrn°
+
+#EXTRACT INDIVIDUALS
+plink --vcf nomefile --keep fileindividui.txt --make-bed --out nome_output
+#esempio:
+plink --vcf ALL.chr16.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf --keep Japan.txt --make-bed --out chr16_Japan
+
+#Creo un file excel dove metto le posizioni per quel cromosoma (N°chr-posizione1-posizione2-n°sequenza) e accanto le formule che successivamente dovranno essere copiate e incollate sulla barra di comando
+#Il file con le posizioni è Corsiv_position (
+#esempio:
+17|198000|198200|1|plink --bfile chr17_Japan --chr 17 --from-bp 198000 --to-bp 198200 --freq --make-bed --out chr17_Japan_seq1
+#COSI' PER OGNI POSIZIONE SUL CROMOSOMA
+#Copio e incollo sulla barra di comando
+
+#Sposto il bim principale in una cartella a parte (chiamata "bim")
+
+#Unisco tutti i bim e tutti i freq
+copy /b *.bim nomeoutput.txt (e.g., chr16_ALLbim)
+copy /b *.frq nomeoutput.txt (e.g., chr16_ALLfreq)
+
+#Copio il corpo del file "Allbim" e "ALLfreq" in un file excel, conto che ci sia uno stesso numero di elementi (seleziono una colonna qualsiasi) e poi metto le posizioni (prese da al bim) vicino al corpo del file "ALLfreq"
+#Salvo il file excel (e.g., SNP_chrNumero)
+
+KNIME
+#Nel blocco "Excel reader" carico il file SNP_chrNumero
+#Nel blocco "file reader" carico il file del cromosoma corrispondente di dbSNP (NumeroChr_dbSNP)
+#Nel blocco "joiner" imposto a sinistra (left table) la posizione (POS), e a destra (right table) X3 (che sarebbe la posizione)
