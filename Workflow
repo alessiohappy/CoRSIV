@@ -13,17 +13,21 @@ Cartella "Corsiv"
 PROMPT DEI COMANDI
 
 #Entro nella cartella
+
 cd Desktop\Corsiv\chrn°
 
 #Extract individuals
 plink --vcf nomefile --keep fileindividui.txt --make-bed --out nome_output
 #esempio:
+
 plink --vcf ALL.chr16.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf --keep Japan.txt --make-bed --out chr16_Japan
 
-#Creo un file excel dove metto le posizioni per quel cromosoma (N°chr-posizione1-posizione2-n°sequenza) e accanto le formule che successivamente dovranno essere copiate e incollate sulla barra di comando
-#Il file con le posizioni è Corsiv_position (
-#esempio:
+#Nel file excel "Corsiv_position" (si trova nella cartella "Corsiv") creo un nuovo foglio dove metto le posizioni per quel cromosoma (N°chr-posizione1-posizione2-n°sequenza) e accanto le formule che successivamente dovranno essere copiate e incollate sulla barra di comando
+#Il file con le posizioni è Corsiv_position 
+#esempio (di cosa deve esserci PER OGNI RIGA PER OGNI POSIZIONE nel foglio del rispettivo cromosoma):
+
 17|198000|198200|1|plink --bfile chr17_Japan --chr 17 --from-bp 198000 --to-bp 198200 --freq --make-bed --out chr17_Japan_seq1
+
 #COSI' PER OGNI POSIZIONE SUL CROMOSOMA
 #Copio e incollo sulla barra di comando
 
