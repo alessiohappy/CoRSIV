@@ -36,8 +36,11 @@ RISULTATO:
 
 17|198000|198200|1|plink --bfile chr17_Japan --chr 17 --from-bp 198000 --to-bp 198200 --freq --make-bed --out chr17_Japan_seq1
 
-#COSI' PER OGNI POSIZIONE SUL CROMOSOMA
-#Copio e incollo sulla barra di comando
+#COPIO E INCOLLO SUL PROMPT DEI COMANDI
+
+RISULTATO:
+#devo avere, oltre a tutti gli altri file, anche un numero di file pari a 6 * il numero delle sequenze. 6 corrisponde al numero di file con diversi formati (bed, bim, fam, freq, testo, NOSEX)
+  #esempio: se ho 363 sequenze (quindi 363 posizioni da-a per un cromosoma), avrò in totale un output dal processo precedente di 363*6 nuovi file, cioè 2178 nuovi file!
 
 #Sposto il bim principale in una cartella a parte (chiamata "bim")
 
