@@ -1,10 +1,11 @@
 OVERVIEW
-Cartella "Corsiv"
-  - dentro troviamo All SNP_CoRSIV (cartella coi file "finali", risultanti dal processo descritto di seguito)
+Cartella "Corsiv", dentro troviamo:
+  - cartella "All SNP_CoRSIV" (cartella coi file "finali", risultanti dal processo descritto di seguito)
   - cartelle dei cromosomi (chr1, chr2, ecc)
   - Corsiv_position (file excel con le posizioni per ogni cromosoma)
   - Japan (.txt, file di testo contenente gli individui Giapponesi da 1000Genomes)
-#In ogni cartella del cromosoma (e.g., chr16) devono esserci DI DEFAULT
+  - file di Plink (LICENSE, plink, prettify, toy.map, toy.ped)
+#In ogni cartella del cromosoma (e.g., chr16) devono esserci DI DEFAULT:
   - il file principale su cui andremo a lavorare (e.g., ALL.chr16.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf)
   - Japan.txt
   - i file di plink (LICENSE, plink, prettify, toy.map, toy.ped)
